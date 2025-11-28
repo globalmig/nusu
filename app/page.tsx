@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import LeakCards from "@/components/LeakCard";
 import Card from "@/components/Card";
+import Contact01 from "@/components/Contact01";
 
 export default function Page() {
   return (
@@ -26,7 +27,7 @@ export default function Page() {
       {/* CTA 섹션 */}
       <section className="w-full -mt-10">
         <div className="bg-[#32582E] rounded-t-3xl">
-          <div className="flex flex-col md:flex-row w-full mx-auto md:h-80">
+          <div className="flex flex-col md:flex-row w-full mx-auto md:h-96">
             {/* 텍스트 영역 */}
             <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-4 md:gap-6 p-6 md:p-10  py-10 text-white text-center">
               <h3 className="text-2xl md:text-3xl font-bold">
@@ -49,14 +50,17 @@ export default function Page() {
       </section>
 
       {/* 이유 섹션 */}
-      <section className="relative w-full py-20">
+      <section id="work" className="relative w-full py-16 md:py-32">
         <div className="absolute inset-0 z-0">
           <Image src="/images/main/cus.png" alt="" fill className="object-cover" />
         </div>
 
         <div className="relative z-10 flex flex-col justify-center items-center text-[#364636]">
           <h2 className="text-2xl md:text-3xl font-black mb-4 text-center">누수탐지공사를 선택해야하는 이유</h2>
-          <p className="text-center mb-8 md:mb-12">고객만족을 위해 전문가의 노하우로 작업을 진행하는 누수탐지전문 업체입니다.</p>
+          <p className="text-center  md:mb-12">
+            고객만족을 위해 전문가의 노하우로 작업을
+            <br className="md:hidden block" /> 진행하는 누수탐지전문 업체입니다.
+          </p>
           <LeakCards />
         </div>
       </section>
@@ -118,16 +122,8 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="w-full bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center py-20 text-white" style={{ backgroundImage: "url('/images/main/contact02.png')" }}>
-        <h3>여수 · 순천 · 광양</h3>
-        <h2 className="md:text-5xl">누수 전문 업체</h2>
-        <a href="tel:010-8631-2545" className="mt-4 inline-block text-[#81D981] font-extrabold text-3xl">
-          010-8631-2545
-        </a>
-        <a href="tel:010-8631-2545" className="mt-4 inline-block bg-[#0E7D15] text-white px-8 py-3 rounded-md font-semibold hover:bg-green-700 transition-colors">
-          문의하기
-        </a>
-      </section>
+
+      <Contact01 />
     </>
   );
 }
