@@ -1,0 +1,9 @@
+# 모든 검색 엔진 허용
+User-agent: *
+Allow: /
+
+# Host (네이버 참고용)
+Host: nusudetect.com
+
+# Sitemap
+Sitemap: https://www.nusudetect.com/sitemap.xml
