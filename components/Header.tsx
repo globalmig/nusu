@@ -59,25 +59,25 @@ export default function Header() {
         {/* 로고 */}
         <Link href="/">
           <h1
-            className={`text-xl md:text-2xl font-bold tracking-tight transition-colors
-          ${isDarkText ? "text-slate-900" : "text-white"}`}
+            className={`text-xl md:text-2xl font-bold tracking-tight transition-colors 
+          ${isDarkText ? "text-slate-900" : "text-white text-shadow"}`}
           >
             누수탐지공사
           </h1>
         </Link>
 
         {/* PC 메뉴 */}
-        <nav className="hidden md:flex gap-8 text-sm font-medium">
+        <nav className="hidden md:flex gap-8 text-lg font-medium ">
           {menuItems.map((item) =>
             item.type === "link" ? (
-              <Link key={item.label} href={item.href!} className={`${isDarkText ? "text-slate-900 hover:text-blue-600" : "text-white hover:text-blue-200"} transition-colors`}>
+              <Link key={item.label} href={item.href!} className={`${isDarkText ? "text-slate-900 hover:text-blue-600 " : "text-white text-shadow hover:text-blue-200"} transition-colors`}>
                 {item.label}
               </Link>
             ) : (
               <button
                 key={item.label}
                 onClick={() => handleScrollMenuClick(item.target!)}
-                className={`${isDarkText ? "text-slate-900 hover:text-blue-600" : "text-white hover:text-blue-200"} transition-colors`}
+                className={`${isDarkText ? "text-slate-900 hover:text-blue-600" : " text-shadow text-white hover:text-blue-200"} transition-colors`}
               >
                 {item.label}
               </button>

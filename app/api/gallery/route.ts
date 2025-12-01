@@ -63,7 +63,7 @@ export async function GET(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
     const page = Number(searchParams.get("page") || "1") || 1;
-    const limit = Number(searchParams.get("limit") || "12") || 12;
+    const limit = Number(searchParams.get("limit") || "24") || 24;
 
     const from = (page - 1) * limit;
     const to = from + limit - 1;

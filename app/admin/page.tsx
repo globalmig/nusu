@@ -126,7 +126,7 @@ export default function GalleryManager() {
       {/* 상단 타이틀 영역 */}
       <div className="text-center mb-8">
         <h2 className="text-2xl md:text-3xl font-bold mb-2">사진 업데이트</h2>
-        <p className="text-sm text-gray-500">보정된 사진과 주요 시공 사진을 업로드해 갤러리 사진을 관리하세요.</p>
+        <p className="text-sm text-gray-500">세로형 사진과 주요 사물이 가운데 배치된 사진을 권장 드립니다.</p>
       </div>
       <LogoutButton />
 

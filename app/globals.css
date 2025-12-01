@@ -8,11 +8,16 @@
 html,
 body {
   font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  scroll-behavior: smooth;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .keep-break {
+    overflow-wrap: break-word;
+    word-break: keep-all;
   }
 }
 
@@ -39,7 +44,11 @@ body {
 
   /* 살짝 그림자 */
   .text-shadow {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    text-shadow: 1px 1px 4px rgba(12, 56, 23, 0.8);
+  }
+
+  .text-shadow-hero {
+    text-shadow: 1px 1px 4px rgba(12, 56, 23, 0.5);
   }
 
   /* 밝은 배경 위에 어두운 그림자 */
