@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import LogoutButton from "@/components/LogoutButton";
 
 type GalleryItem = {
   id: string;
@@ -121,12 +122,13 @@ export default function GalleryManager() {
   };
 
   return (
-    <section className="max-w-4xl mx-auto py-10 mt-32">
+    <section className="max-w-4xl mx-auto py-10 mt-24">
       {/* 상단 타이틀 영역 */}
       <div className="text-center mb-8">
         <h2 className="text-2xl md:text-3xl font-bold mb-2">사진 업데이트</h2>
         <p className="text-sm text-gray-500">보정된 사진과 주요 시공 사진을 업로드해 갤러리 사진을 관리하세요.</p>
       </div>
+      <LogoutButton />
 
       {/* 드래그&드롭 업로드 영역 */}
       <div

@@ -14,6 +14,7 @@ export default function GalleryPage() {
   const [items, setItems] = useState<GalleryItem[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [page, setPage] = useState(1);
+  const [hasMore, setHasMore] = useState(true);
 
   // 🔥 모달 상태
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -31,6 +32,13 @@ export default function GalleryPage() {
         }
 
         setItems(json.items);
+
+        //  다음 페이지 여부 판단
+        if (json.items.length < 12) {
+          setHasMore(false);
+        } else {
+          setHasMore(true);
+        }
       } finally {
         setIsLoading(false);
       }
@@ -55,9 +63,9 @@ export default function GalleryPage() {
         <p className="text-center md:mb-12">세로형 사진과 주요 사물이 가운데 배치된 사진을 권장 드립니다.</p>
       </div>
 
-      {isLoading && <p>불러오는 중...</p>}
+      {isLoading && <p className="text-center w-full min-h-96 mt-32 text-gray-500">불러오는 중...</p>}
 
-      {!isLoading && items.length === 0 && <p className="text-gray-500">등록된 사진이 없습니다.</p>}
+      {!isLoading && items.length === 0 && <p className="text-gray-500 text-center w-full min-h-96 mt-32">등록된 사진이 없습니다.</p>}
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {items.map((item) => (
@@ -70,14 +78,14 @@ export default function GalleryPage() {
       </div>
 
       {/* 페이지 버튼 */}
-      {/* <div className="flex justify-center gap-4 mt-8">
+      <div className="flex justify-center gap-4 mt-8">
         <button className="px-3 py-1 border rounded disabled:opacity-40" disabled={page === 1} onClick={() => setPage((p) => Math.max(1, p - 1))}>
           이전
         </button>
         <button className="px-3 py-1 border rounded" onClick={() => setPage((p) => p + 1)}>
           다음
         </button>
-      </div> */}
+      </div>
 
       {/* 🔥 이미지 모달 */}
       {selectedImage && (
