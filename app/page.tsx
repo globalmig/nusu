@@ -17,13 +17,13 @@ export default function Page() {
         }}
       >
         <div className="relative w-full h-[500px] md:h-screen">
-          <div className="relative z-10 max-w-4xl mt-8 mx-auto text-center text-white">
-            <h1 className="text-4xl md:text-6xl font-bold leading-snug drop-shadow-2xl text-balance text-shadow-hero">
+          <div className="relative z-10 max-w-4xl  md:mt-12 mx-auto text-center text-white">
+            <h1 className="text-4xl md:text-6xl font-bold leading-snug text-balance  text-green-800" style={{ lineHeight: "1.2" }}>
               집 안의 누수,
               <br />
               혼자 고민하지 마세요.
             </h1>
-            <p className="mt-4 text-xl md:text-2xl text-gray-100 drop-shadow-lg text-shadow-hero">악성누수도 경험 많은 전문가가 직접 해결합니다.</p>
+            <p className="mt-4 text-xl md:text-2xl text-green-800 ">악성누수도 경험 많은 전문가가 직접 해결합니다.</p>
           </div>
           <div className="absolute bottom-40 left-1/2 -translate-x-1/2 z-10 mb-6 md:block hidden">
             <ScrollMouse />
@@ -33,20 +33,20 @@ export default function Page() {
 
       {/* CTA 섹션 */}
       <section className="w-full -mt-10">
-        <div className="bg-[#32582E] rounded-t-3xl">
+        <div className="bg-gradient-to-br from-[#fff59d] to-[#ffd54f] rounded-t-3xl">
           <div className="flex flex-col md:flex-row w-full mx-auto md:h-96">
             {/* 텍스트 영역 */}
-            <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-4 md:gap-6 p-6 md:p-10  py-10 text-white text-center">
-              <h3 className="text-2xl md:text-3xl font-bold">
+            <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-4 md:gap-6 p-6 md:p-10  py-10 text-green800 text-center">
+              <h3 className="text-2xl md:text-4xl font-bold">
                 누수 전문 업체를 <br className="md:hidden block" /> 찾으시나요?
               </h3>
-              <p className="text-sm md:text-base leading-relaxed">
+              <p className="text-sm md:text-lg leading-relaxed">
                 악성 누수 전담 베테랑 전문팀
                 <br />
                 정밀 첨단 장비 완비 · 고난도 누수까지 해결
               </p>
               <Link href="#contact">
-                <button className="bg-white text-[#32582E] px-4 md:px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition">365일 24시간 즉시 상담 가능!</button>
+                <button className="bg-[#369c2b] text-white px-4 md:px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition md:text-2xl">365일 24시간 즉시 상담 가능!</button>
               </Link>
             </div>
 
@@ -102,7 +102,9 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="w-full bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/main/card_bg.png')" }}>
+      <section className="w-full bg-gradient-to-br from-[#fff59d] to-[#ffd54f] ">
+        {/* < className="w-full bg-cover bg-center bg-no-repeat " style={{ backgroundImage: "url('/images/main/card_bg.png')" }}> */}
+
         <div className="relative z-10 flex flex-col justify-center items-center text-[#364636] py-20 px-4">
           <h2 className="text-2xl md:text-3xl font-black mb-4 text-center">누수 공사 과정</h2>
           <p className="text-center mb-8 md:mb-12 font-light">

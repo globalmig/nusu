@@ -58,8 +58,14 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between">
         {/* 로고 */}
         <Link href="/">
+          <h3
+            className={`text-sm md:text-base font-normal tracking-tight transition-colors  mb-0
+          ${isDarkText ? "text-slate-900" : "text-white text-shadow"}`}
+          >
+            누수 탐지 전문 업체
+          </h3>
           <h1
-            className={`text-xl md:text-2xl font-bold tracking-tight transition-colors 
+            className={`text-xl md:text-3xl font-bold tracking-tight transition-colors 
           ${isDarkText ? "text-slate-900" : "text-white text-shadow"}`}
           >
             누수탐지공사
