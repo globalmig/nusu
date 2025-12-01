@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   // ✅ 네이버 서치어드바이저 등록 후 값 넣기
   verification: {
     other: {
-      "naver-site-verification": "NAVER_VERIFICATION_CODE",
+      "naver-site-verification": "2449dc051d87ea36ebd582ec80e3bcab2fde85f7",
       // "google-site-verification": "GOOGLE_VERIFICATION_CODE" // 필요하면
     },
   },
