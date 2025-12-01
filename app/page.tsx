@@ -18,7 +18,7 @@ export default function Page() {
       >
         <div className="relative w-full h-[500px] md:h-screen">
           <div className="relative z-10 max-w-4xl  md:mt-12 mx-auto text-center text-white">
-            <h1 className="text-4xl md:text-6xl font-bold leading-snug text-balance  text-green-800" style={{ lineHeight: "1.2" }}>
+            <h1 className="text-3xl md:text-6xl font-bold leading-snug text-balance  text-green-800" style={{ lineHeight: "1.2" }}>
               집 안의 누수,
               <br />
               혼자 고민하지 마세요.

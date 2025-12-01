@@ -45,10 +45,10 @@ export default function Header() {
     }
   };
 
-  // 텍스트 색상 결정: 메인 페이지가 아니거나 스크롤된 경우 검은색
-  const isDarkText = !isMainPage || isScrolled;
-  // 배경 결정: 메인 페이지가 아니거나 스크롤된 경우 흰색 배경
-  const hasWhiteBg = !isMainPage || isScrolled;
+  // 텍스트 색상 결정: 메인 페이지가 아니거나 스크롤된 경우 또는 모바일 메뉴 열린 경우 검은색
+  const isDarkText = !isMainPage || isScrolled || isMenuOpen;
+  // 배경 결정: 메인 페이지가 아니거나 스크롤된 경우 또는 모바일 메뉴 열린 경우 흰색 배경
+  const hasWhiteBg = !isMainPage || isScrolled || isMenuOpen;
 
   return (
     <header
@@ -65,7 +65,7 @@ export default function Header() {
             누수 탐지 전문 업체
           </h3>
           <h1
-            className={`text-xl md:text-3xl font-bold tracking-tight transition-colors 
+            className={`text-xl md:text-3xl font-bold tracking-tight transition-colors mb-0
           ${isDarkText ? "text-slate-900" : "text-white text-shadow"}`}
           >
             누수탐지공사
@@ -76,14 +76,14 @@ export default function Header() {
         <nav className="hidden md:flex gap-8 text-lg font-medium ">
           {menuItems.map((item) =>
             item.type === "link" ? (
-              <Link key={item.label} href={item.href!} className={`${isDarkText ? "text-slate-900 hover:text-blue-600 " : "text-white text-shadow hover:text-blue-200"} transition-colors`}>
+              <Link key={item.label} href={item.href!} className={`${isDarkText ? "text-slate-900 hover:text-yellow-600 " : "text-white text-shadow hover:text-yellow-200"} transition-colors`}>
                 {item.label}
               </Link>
             ) : (
               <button
                 key={item.label}
                 onClick={() => handleScrollMenuClick(item.target!)}
-                className={`${isDarkText ? "text-slate-900 hover:text-blue-600" : " text-shadow text-white hover:text-blue-200"} transition-colors`}
+                className={`${isDarkText ? "text-slate-900 hover:text-yellow-600" : " text-shadow text-white hover:text-yellow-200"} transition-colors`}
               >
                 {item.label}
               </button>
