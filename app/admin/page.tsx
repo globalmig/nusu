@@ -43,6 +43,13 @@ export default function GalleryManager() {
 
     try {
       for (const file of files) {
+        // (선택) 파일 용량 제한 – 예: 5MB
+        const MAX_SIZE = 5 * 1024 * 1024;
+        if (file.size > MAX_SIZE) {
+          alert("파일 용량이 너무 큽니다. 5MB 이하로 줄여서 업로드해주세요.");
+          continue;
+        }
+
         const formData = new FormData();
         formData.append("file", file);
 
@@ -51,12 +58,20 @@ export default function GalleryManager() {
           body: formData,
         });
 
-        const json = await res.json();
-
         if (!res.ok) {
-          alert(json.error ?? "업로드 실패");
+          // JSON이 아닐 수도 있어서 먼저 text로 받기
+          const errorText = await res.text();
+          console.error("업로드 에러:", res.status, errorText);
+
+          if (res.status === 413) {
+            alert("파일 용량이 너무 큽니다. 이미지를 조금 줄여서 다시 시도해주세요.");
+          } else {
+            alert("업로드 실패: " + (errorText || "알 수 없는 오류"));
+          }
           continue;
         }
+
+        const json = await res.json();
 
         // 서버에서 반환된 새 아이템 추가
         setItems((prev) => [...prev, json.item]);
