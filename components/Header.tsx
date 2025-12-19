@@ -64,12 +64,12 @@ export default function Header() {
           >
             누수 탐지 전문 업체
           </h3>
-          <h1
+          <h2
             className={`text-xl md:text-3xl font-bold tracking-tight transition-colors mb-0
           ${isDarkText ? "text-slate-900" : "text-white text-shadow"}`}
           >
             누수탐지공사
-          </h1>
+          </h2>
         </Link>
 
         {/* PC 메뉴 */}

@@ -18,12 +18,13 @@ export default function Page() {
       >
         <div className="relative w-full h-[500px] md:h-screen">
           <div className="relative z-10 max-w-4xl  md:mt-12 mx-auto text-center text-white">
+            <h1 className=" mt-4 text-base md:text-xl font-bold text-green-800 leading-snug">여수·순천·광양 누수탐지공사 전문업체</h1>
             <h2 className="text-3xl md:text-6xl font-bold leading-snug text-balance  text-green-800" style={{ lineHeight: "1.2" }}>
               집 안의 누수,
               <br />
               혼자 고민하지 마세요.
             </h2>
-            <p className="mt-4 text-xl md:text-2xl text-green-800 ">악성누수도 경험 많은 전문가가 직접 해결합니다.</p>
+            {/* <p className="mt-4 text-xl md:text-2xl text-green-800 ">악성누수도 경험 많은 전문가가 직접 해결합니다.</p> */}
           </div>
           <div className="absolute bottom-40 left-1/2 -translate-x-1/2 z-10 mb-6 md:block hidden">
             <ScrollMouse />
