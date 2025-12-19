@@ -18,11 +18,11 @@ export default function Page() {
       >
         <div className="relative w-full h-[500px] md:h-screen">
           <div className="relative z-10 max-w-4xl  md:mt-12 mx-auto text-center text-white">
-            <h1 className="text-3xl md:text-6xl font-bold leading-snug text-balance  text-green-800" style={{ lineHeight: "1.2" }}>
+            <h2 className="text-3xl md:text-6xl font-bold leading-snug text-balance  text-green-800" style={{ lineHeight: "1.2" }}>
               집 안의 누수,
               <br />
               혼자 고민하지 마세요.
-            </h1>
+            </h2>
             <p className="mt-4 text-xl md:text-2xl text-green-800 ">악성누수도 경험 많은 전문가가 직접 해결합니다.</p>
           </div>
           <div className="absolute bottom-40 left-1/2 -translate-x-1/2 z-10 mb-6 md:block hidden">
@@ -61,7 +61,7 @@ export default function Page() {
       {/* 이유 섹션 */}
       <section id="work" className="relative w-full py-16 md:py-32">
         <div className="absolute inset-0 z-0">
-          <Image src="/images/main/cus.png" alt="" fill className="object-cover" />
+          <Image src="/images/main/cus.png" alt="섹션" fill className="object-cover" />
         </div>
 
         <div className="relative z-10 flex flex-col justify-center items-center text-[#364636]">
@@ -77,7 +77,7 @@ export default function Page() {
       {/* Benefit 섹션 */}
       <section className="relative w-full py-20 px-6 -mt-3">
         <div className="absolute inset-0 z-0">
-          <Image src="/images/main/benefit.png" alt="" fill className="object-cover" />
+          <Image src="/images/main/benefit.png" alt="섹션" fill className="object-cover" />
         </div>
 
         <div className="relative z-10 w-full max-w-5xl mx-auto flex flex-col md:flex-row justify-center gap-6 md:gap-10 items-center">
