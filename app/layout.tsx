@@ -19,17 +19,17 @@ export const metadata: Metadata = {
   // ✅ 실제 도메인으로 변경!
   metadataBase: new URL("https://www.nusudetect.com"),
   title: {
-    default: "누수탐지공사 | 여수·순천·광양 누수 탐지 전문업체",
+    default: "누수탐지공사 | 대전 누수 탐지 전문업체",
     template: "%s | 누수탐지공사",
   },
-  description: "여수·순천·광양 악성 누수 전문 업체입니다.첨단 장비로 탐지·복구 원스톱 해결! 탐지 실패 시 무상",
-  keywords: ["누수탐지공사", "누수 탐지", "누수 공사", "여수 누수", "순천 누수", "광양 누수", "욕실 누수", "배관 누수", "악성 누수", "누수 전문 업체"],
+  description: "대전 악성 누수 전문 업체입니다.첨단 장비로 탐지·복구 원스톱 해결! 탐지 실패 시 무상",
+  keywords: ["누수탐지공사", "누수 탐지", "누수 공사", "대전 누수", "욕실 누수", "배관 누수", "악성 누수", "누수 전문 업체"],
   alternates: {
     canonical: "https://www.nusudetect.com",
   },
   openGraph: {
-    title: "누수탐지공사 | 여수·순천·광양 누수 탐지 전문업체",
-    description: "집 안의 누수, 혼자 고민하지 마세요. 여수·순천·광양 지역 누수 탐지 및 공사 전문업체 누수탐지공사가 첨단장비로 정확하게 찾아드립니다.",
+    title: "누수탐지공사 | 대전 누수 탐지 전문업체",
+    description: "집 안의 누수, 혼자 고민하지 마세요. 대전 지역 누수 탐지 및 공사 전문업체 누수탐지공사가 첨단장비로 정확하게 찾아드립니다.",
     url: "https://www.nusudetect.com",
     siteName: "누수탐지공사",
     locale: "ko_KR",
@@ -40,14 +40,14 @@ export const metadata: Metadata = {
         url: "/images/seo/og-main.jpg",
         width: 1200,
         height: 630,
-        alt: "누수탐지공사 여수·순천·광양 누수 탐지 전문업체",
+        alt: "누수탐지공사 대전 누수 탐지 전문업체",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "누수탐지공사 | 여수·순천·광양 누수 탐지 전문업체",
-    description: "여수·순천·광양 지역 악성 누수 전문 누수탐지공사. 첨단 장비와 풍부한 경험으로 누수를 빠르게 진단하고 해결합니다.",
+    title: "누수탐지공사 | 대전 누수 탐지 전문업체",
+    description: "대전 지역 악성 누수 전문 누수탐지공사. 첨단 장비와 풍부한 경험으로 누수를 빠르게 진단하고 해결합니다.",
     images: ["/images/seo/og-main.jpg"],
   },
   icons: {
@@ -78,11 +78,11 @@ export default function RootLayout({
     address: {
       "@type": "PostalAddress",
       addressCountry: "KR",
-      addressRegion: "전라남도",
-      addressLocality: "여수시", // 정확한 지역 있으면 수정
+      addressRegion: "대전광역시",
+      addressLocality: "서구", // 정확한 지역 있으면 수정
     },
-    areaServed: ["여수시", "순천시", "광양시"],
-    description: "여수·순천·광양 지역 악성 누수 전문 누수탐지공사. 첨단 장비를 이용해 누수 위치를 정확하게 진단하고 복구 공사까지 책임지고 진행합니다.",
+    areaServed: ["대전광역시",],
+    description: "대전 지역 악성 누수 전문 누수탐지공사. 첨단 장비를 이용해 누수 위치를 정확하게 진단하고 복구 공사까지 책임지고 진행합니다.",
   };
 
   return (

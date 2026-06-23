@@ -18,7 +18,7 @@ export default function Page() {
       >
         <div className="relative w-full h-[500px] md:h-screen">
           <div className="relative z-10 max-w-4xl  md:mt-12 mx-auto text-center text-white">
-            <h1 className=" mt-4 text-base md:text-xl font-bold text-green-800 leading-snug">여수·순천·광양 누수탐지공사 전문업체</h1>
+            <h1 className=" mt-4 text-base md:text-xl font-bold text-green-800 leading-snug">대전 누수탐지공사 전문업체</h1>
             <h2 className="text-3xl md:text-6xl font-bold leading-snug text-balance  text-green-800" style={{ lineHeight: "1.2" }}>
               집 안의 누수,
               <br />
@@ -91,7 +91,7 @@ export default function Page() {
               <br /> 공사비를 받지 않습니다.
             </h2>
             <p className="text-sm md:text-base leading-relaxed md:leading-[2] keep-break ">
-              누수탐지공사는 여수·순천·광양 지역을 중심으로 누수 점검과 설비 관련 시공을 전문적으로 진행하고 있습니다. 가스·난방·수도 설비는 안전을 위해 전문건설면허를 가진 업체에서 시공하는 것이
+              누수탐지공사는 대전 지역을 중심으로 누수 점검과 설비 관련 시공을 전문적으로 진행하고 있습니다. 가스·난방·수도 설비는 안전을 위해 전문건설면허를 가진 업체에서 시공하는 것이
               필수입니다.
               <br className="hidden md:block" />
               저희는 정식 면허와 풍부한 현장 경험을 바탕으로 누수 공사, 보일러·배관 시공 등 다양한 작업을 안전하게 제공합니다.

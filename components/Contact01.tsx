@@ -25,8 +25,8 @@ export default function Contact01() {
       className="w-full bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center py-20 text-white"
       style={{ backgroundImage: "url('/images/main/contact02.png')" }}
     >
-      <h3>대전</h3>
-      <h2 className="md:text-5xl">누수 전문 업체</h2>
+      {/* <h3>대전</h3> */}
+      <h2 className="md:text-5xl">대전 누수 전문 업체</h2>
 
       {/* 전화번호 표시 */}
       <a href={`tel:${phoneNumber}`} onClick={handleClick} className="mt-4 inline-block text-[#81D981] font-extrabold text-3xl">
